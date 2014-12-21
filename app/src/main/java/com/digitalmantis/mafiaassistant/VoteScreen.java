@@ -123,6 +123,7 @@ public class VoteScreen extends Activity implements OnClickListener {
 
     }
 
+    // TODO: Implement music to indicate whose turn it is to vote
     // Dialogs and basic actions to perform when voting
     public void handleVote(String voter, Player player) {
 
@@ -193,28 +194,26 @@ public class VoteScreen extends Activity implements OnClickListener {
                 if (!detectiveIsDead) {
                     doVote("Detective");
                 }
-                phaseIndex++;
             } else if (phaseIndex == 1) {
                 // Let the mafia vote
                 doVote("Mafia");
-                phaseIndex++;
             } else if (phaseIndex == 2) {
                 // If the doctor isn't dead, let him vote
                 if (!docIsDead) {
                     doVote("Doctor");
                 }
-                phaseIndex++;
                 // Display what happened during the night and let the innocents vote
             } else if (phaseIndex == 3) {
                 showResults();
                 curDay++;
                 lblCurDay.setText("Day: " + (curDay + 1));
-                phaseIndex++;
             } else if (phaseIndex == 4) {
                 doVote("Innocent");
-
-                phaseIndex = 0;
+                phaseIndex = -1;
             }
+
+            // Increment to the next part of the night/day
+            phaseIndex++;
         } else {
             // TODO: Add unique victory text
             if (innocentVictory) {
