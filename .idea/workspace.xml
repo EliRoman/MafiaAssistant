@@ -31,11 +31,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f589ac0-3c40-4aea-a506-31e592a74bdd" name="Default" comment="First commit using Android Studio VCS Tools and temporary solution to loading text resources, also cleaned up for-loops">
-      <change type="DELETED" beforePath="C:\Users\James\Documents\GitHub\MafiaAssistant\.idea\libraries\appcompat_v7_21_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\James\Documents\GitHub\MafiaAssistant\.idea\libraries\support_annotations_21_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\James\Documents\GitHub\MafiaAssistant\.idea\libraries\support_v4_21_0_0.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_20_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_20_0_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mafia Assistant.iws" />
@@ -1374,7 +1369,11 @@
       <created>1419196764557</created>
       <updated>1419196764557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First commit using Android Studio VCS Tools and temporary solution to loading text resources, also cleaned up for-loops">
+      <created>1419197549432</created>
+      <updated>1419197549432</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
