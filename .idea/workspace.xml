@@ -26,11 +26,10 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.digitalmantis.mafiaassistant" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f589ac0-3c40-4aea-a506-31e592a74bdd" name="Default" comment="First commit using Android Studio VCS Tools and temporary solution to loading text resources, also cleaned up for-loops">
+    <list default="true" id="1f589ac0-3c40-4aea-a506-31e592a74bdd" name="Default" comment="Fixed gradle sync issues">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mafia Assistant.iws" />
@@ -72,8 +71,8 @@
       <file leaf-file-name="VoteScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5710526" vertical-offset="4118" max-vertical-offset="5338">
-              <caret line="258" column="13" selection-start-line="258" selection-start-column="13" selection-end-line="258" selection-end-column="13" />
+            <state vertical-scroll-proportion="-0.80255944" vertical-offset="4791" max-vertical-offset="5338">
+              <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11929#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -1373,7 +1372,11 @@
       <created>1419197549432</created>
       <updated>1419197549432</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed gradle sync issues">
+      <created>1419197561213</created>
+      <updated>1419197561214</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1413,7 +1416,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23129252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2840136" sideWeight="0.4871407" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30612245" sideWeight="0.4871407" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17246597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1448,7 +1451,8 @@
     </option>
     <MESSAGE value="First commit using Android Studio VCS Tools and temporary solution to loading text resources" />
     <MESSAGE value="First commit using Android Studio VCS Tools and temporary solution to loading text resources, also cleaned up for-loops" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit using Android Studio VCS Tools and temporary solution to loading text resources, also cleaned up for-loops" />
+    <MESSAGE value="Fixed gradle sync issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed gradle sync issues" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1717,8 +1721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5710526" vertical-offset="4118" max-vertical-offset="5338">
-          <caret line="258" column="13" selection-start-line="258" selection-start-column="13" selection-end-line="258" selection-end-column="13" />
+        <state vertical-scroll-proportion="-0.80255944" vertical-offset="4791" max-vertical-offset="5338">
+          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
           <folding>
             <element signature="e#0#11929#0" expanded="true" />
             <element signature="imports" expanded="true" />
