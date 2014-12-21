@@ -109,7 +109,7 @@ public class VoteScreen extends Activity implements OnClickListener {
 
                 for (int i = 0; i < players.length; i++) {
                     if (players[i].getPlayerID().equals(choiceID)) {
-                        calculateVote(voter, players[i]);
+                        handleVote(voter, players[i]);
                         break;
                     }
                 }
@@ -120,43 +120,31 @@ public class VoteScreen extends Activity implements OnClickListener {
     }
 
     // Dialogs and basic actions to perform when voting
-    public void calculateVote(String voter, Player player) {
+    public void handleVote(String voter, Player player) {
+
+        // Create the alertDialog object
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setButton("Close", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            }
+        });
 
         // TODO: Find alternative to setButton()
         if (voter.equals("Detective")) {
             // Display the investigated player's role
-            AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-            alertDialog.setButton("Close", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                }
-            });
             alertDialog.setTitle("Player Investigated");
             alertDialog.setMessage(player.getName() + " is " + player.getRole() + "!");
-            alertDialog.show();
         } else if (voter.equals("Mafia")) {
+            // Inform the mafia of their choice again
             player.setHealthStatus(player.getHealthTypes()[2]);
-            AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-            alertDialog.setButton("Close", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                }
-            });
             alertDialog.setTitle("Player Hit");
             alertDialog.setMessage("You put a hit on " + player.getName() + "!");
-            alertDialog.show();
         } else if (voter.equals("Doctor")) {
-            // Save the player
+            // Indicate which player was saved
             player.setHealthStatus(player.getHealthTypes()[0]);
-            AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-            alertDialog.setButton("Close", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                }
-            });
             alertDialog.setTitle("Player Saved");
             alertDialog.setMessage(player.getName() + " is safe from the Mafia!");
-            alertDialog.show();
         } else if (voter.equals("Innocent")) {
             // Exile the player
             player.setHealthStatus(player.getHealthTypes()[1]);
@@ -169,23 +157,18 @@ public class VoteScreen extends Activity implements OnClickListener {
             //detect if the exiled player has a special role so that later we wont call them
             if (player.getRole().equals("Detective")) {
                 detectiveIsDead = true;
-            }
-            if (player.getRole().equals("Doctor")) {
+            }else if (player.getRole().equals("Doctor")) {
                 docIsDead = true;
             }
 
             checkVictory();
-            AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-            alertDialog.setButton("Close", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                }
-            });
             alertDialog.setTitle("Player Exiled");
             alertDialog.setMessage(player.getName() + " was " + player.getRole() + "!");
-            alertDialog.show();
             phaseIndex = 0;
         }
+
+        // Show the built dialog
+        alertDialog.show();
     }
 
     @Override
@@ -238,7 +221,7 @@ public class VoteScreen extends Activity implements OnClickListener {
 
                 innocentCount--;
 
-                //detect if the killed player has a special role so that later we wont call them
+                // Detect if the killed player has a special role so that later we wont call them
                 if (players[i].getRole().equals("Detective")) {
                     detectiveIsDead = true;
                 }
