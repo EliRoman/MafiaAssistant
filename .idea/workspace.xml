@@ -78,18 +78,16 @@
       <file leaf-file-name="VoteScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6936416" vertical-offset="1714" max-vertical-offset="4318">
-              <caret line="122" column="57" selection-start-line="122" selection-start-column="57" selection-end-line="122" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.559415" vertical-offset="0" max-vertical-offset="4624">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <element signature="e#0#9489#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#2071#2079#0" expanded="true" />
-                <element signature="e#3140#4343#0" expanded="true" />
-                <element signature="e#3334#3342#0" expanded="true" />
-                <element signature="e#4332#4333#0" expanded="true" />
-                <element signature="e#4647#4809#0" expanded="true" />
-                <element signature="e#4798#4799#0" expanded="true" />
-                <element signature="method#onCreateOptionsMenu#0;class#VoteScreen#0" expanded="false" />
+                <element signature="e#0#10419#0" expanded="true" />
+                <element signature="e#2345#2353#0" expanded="true" />
+                <element signature="e#3534#4723#0" expanded="true" />
+                <element signature="e#3728#3736#0" expanded="true" />
+                <element signature="e#4712#4713#0" expanded="true" />
+                <element signature="e#5049#5211#0" expanded="true" />
+                <element signature="e#5200#5201#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1113,7 +1111,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1425,7 +1423,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1443,10 +1441,10 @@
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2840136" sideWeight="0.4871407" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2840136" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17298938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17246597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2840136" sideWeight="0.5128593" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1500,15 +1498,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3111" max-vertical-offset="4318">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
           <folding>
-            <element signature="e#0#9489#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#2071#2079#0" expanded="true" />
-            <element signature="e#3140#4343#0" expanded="true" />
-            <element signature="e#3334#3342#0" expanded="true" />
-            <element signature="e#4332#4333#0" expanded="true" />
-            <element signature="e#4647#4809#0" expanded="true" />
-            <element signature="e#4798#4799#0" expanded="true" />
-            <element signature="method#onCreateOptionsMenu#0;class#VoteScreen#0" expanded="false" />
+            <element signature="e#0#10419#0" expanded="true" />
+            <element signature="e#2345#2353#0" expanded="true" />
+            <element signature="e#3534#4723#0" expanded="true" />
+            <element signature="e#3728#3736#0" expanded="true" />
+            <element signature="e#4712#4713#0" expanded="true" />
+            <element signature="e#5049#5211#0" expanded="true" />
+            <element signature="e#5200#5201#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1542,15 +1538,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3179" max-vertical-offset="4386">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
           <folding>
-            <element signature="e#0#9489#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#2071#2079#0" expanded="true" />
-            <element signature="e#3140#4343#0" expanded="true" />
-            <element signature="e#3334#3342#0" expanded="true" />
-            <element signature="e#4332#4333#0" expanded="true" />
-            <element signature="e#4647#4809#0" expanded="true" />
-            <element signature="e#4798#4799#0" expanded="true" />
-            <element signature="method#onCreateOptionsMenu#0;class#VoteScreen#0" expanded="false" />
+            <element signature="e#0#10419#0" expanded="true" />
+            <element signature="e#2345#2353#0" expanded="true" />
+            <element signature="e#3534#4723#0" expanded="true" />
+            <element signature="e#3728#3736#0" expanded="true" />
+            <element signature="e#4712#4713#0" expanded="true" />
+            <element signature="e#5049#5211#0" expanded="true" />
+            <element signature="e#5200#5201#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1698,18 +1692,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6936416" vertical-offset="1714" max-vertical-offset="4318">
-          <caret line="122" column="57" selection-start-line="122" selection-start-column="57" selection-end-line="122" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.559415" vertical-offset="0" max-vertical-offset="4624">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9489#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#2071#2079#0" expanded="true" />
-            <element signature="e#3140#4343#0" expanded="true" />
-            <element signature="e#3334#3342#0" expanded="true" />
-            <element signature="e#4332#4333#0" expanded="true" />
-            <element signature="e#4647#4809#0" expanded="true" />
-            <element signature="e#4798#4799#0" expanded="true" />
-            <element signature="method#onCreateOptionsMenu#0;class#VoteScreen#0" expanded="false" />
+            <element signature="e#0#10419#0" expanded="true" />
+            <element signature="e#2345#2353#0" expanded="true" />
+            <element signature="e#3534#4723#0" expanded="true" />
+            <element signature="e#3728#3736#0" expanded="true" />
+            <element signature="e#4712#4713#0" expanded="true" />
+            <element signature="e#5049#5211#0" expanded="true" />
+            <element signature="e#5200#5201#0" expanded="true" />
           </folding>
         </state>
       </provider>

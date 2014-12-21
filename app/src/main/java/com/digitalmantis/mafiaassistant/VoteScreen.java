@@ -21,16 +21,16 @@ import java.util.ArrayList;
 
 public class VoteScreen extends Activity implements OnClickListener {
 
-
     private Player[] players;
     private TextView lblCurDay, lblResults;
     private Button btnNextPhase;
     private boolean gameOver = false, innocentVictory = false, docIsDead = false, detectiveIsDead = false;
     private String choiceID;
-    private int curDay = 0, phaseIndex = 0, choiceIndex, innocentCount = 0, mafiaCount = 0;
+    private int curDay = 0, phaseIndex = 0, innocentCount = 0, mafiaCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Inflate the UI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vote_screen);
         lblCurDay = (TextView) findViewById(R.id.lblCurDay);
@@ -42,7 +42,7 @@ public class VoteScreen extends Activity implements OnClickListener {
         String[] temp = getIntent().getStringArrayExtra("players.array.key");
         players = new Player[temp.length];
 
-        // Take the array of pseudo-players and turn them into real players
+        // Take the array of pseudo-players and turn them into real players, as well as incremement the appropriate counters
         for (int i = 0; i < temp.length; i++) {
             String[] curPlayer = temp[i].split("\\#\\#");
             players[i] = new Player(curPlayer[0], curPlayer[1]);
@@ -53,11 +53,14 @@ public class VoteScreen extends Activity implements OnClickListener {
             }
         }
 
+        // The current night is the current day plus 1 because we started one the first night
         lblCurDay.setText("Night: " + (curDay + 1));
 
     }
 
     public void doVote(final String voter) {
+
+        // Create a new array list because we don't know how many people are going to be included in the voting popup
         ArrayList<String> dialogItems = new ArrayList<String>();
 
         // Build the menu appropriately
@@ -73,24 +76,25 @@ public class VoteScreen extends Activity implements OnClickListener {
             }
         }
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // Create the dialog for the popup
+        AlertDialog.Builder votingPopup = new AlertDialog.Builder(this);
 
         if (voter.equals("Detective")) {
-            builder.setTitle("Who to investigate?");
+            votingPopup.setTitle("Who to investigate?");
         } else if (voter.equals("Mafia")) {
-            builder.setTitle("Who to Kill");
+            votingPopup.setTitle("Who to Kill");
         } else if (voter.equals("Doctor")) {
-            builder.setTitle("Who to Save");
+            votingPopup.setTitle("Who to Save");
         } else if (voter.equals("Innocent")) {
-            builder.setTitle("Who to Exile");
+            votingPopup.setTitle("Who to Exile");
         }
 
-        builder.setItems(dialogItems.toArray(new String[dialogItems.size()]), new DialogInterface.OnClickListener() {
+        // Fill the popup with the appropriate names
+        votingPopup.setItems(dialogItems.toArray(new String[dialogItems.size()]), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int selection) {
                 ArrayList<String> dialogIDs = new ArrayList<String>();
 
-                // Build the menu appropriately
                 for (int i = 0; i < players.length; i++) {
 
                     // If the current player is not dead, then add them to the voting list
@@ -104,8 +108,8 @@ public class VoteScreen extends Activity implements OnClickListener {
 
                 }
 
-                choiceIndex = selection;
-                choiceID = dialogIDs.get(choiceIndex);
+                // Take the selection of the player and find their unique ID
+                choiceID = dialogIDs.get(selection);
 
                 for (int i = 0; i < players.length; i++) {
                     if (players[i].getPlayerID().equals(choiceID)) {
@@ -115,39 +119,41 @@ public class VoteScreen extends Activity implements OnClickListener {
                 }
             }
         });
-        builder.show();
+        votingPopup.show();
 
     }
 
     // Dialogs and basic actions to perform when voting
     public void handleVote(String voter, Player player) {
 
-        // Create the alertDialog object
-        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setButton("Close", new DialogInterface.OnClickListener() {
+        // Create the votingResultPopup object
+        AlertDialog votingResultPopup = new AlertDialog.Builder(this).create();
+        votingResultPopup.setButton("Close", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();
             }
         });
 
-        // TODO: Find alternative to setButton()
+        // TODO: Find alternative to setButton() if needed
         if (voter.equals("Detective")) {
             // Display the investigated player's role
-            alertDialog.setTitle("Player Investigated");
-            alertDialog.setMessage(player.getName() + " is " + player.getRole() + "!");
+            votingResultPopup.setTitle("Player Investigated");
+            votingResultPopup.setMessage(player.getName() + " is " + player.getRole() + "!");
         } else if (voter.equals("Mafia")) {
             // Inform the mafia of their choice again
             player.setHealthStatus(player.getHealthTypes()[2]);
-            alertDialog.setTitle("Player Hit");
-            alertDialog.setMessage("You put a hit on " + player.getName() + "!");
+            votingResultPopup.setTitle("Player Hit");
+            votingResultPopup.setMessage("You put a hit on " + player.getName() + "!");
         } else if (voter.equals("Doctor")) {
             // Indicate which player was saved
             player.setHealthStatus(player.getHealthTypes()[0]);
-            alertDialog.setTitle("Player Saved");
-            alertDialog.setMessage(player.getName() + " is safe from the Mafia!");
+            votingResultPopup.setTitle("Player Saved");
+            votingResultPopup.setMessage(player.getName() + " is safe from the Mafia!");
         } else if (voter.equals("Innocent")) {
             // Exile the player
             player.setHealthStatus(player.getHealthTypes()[1]);
+
+            // If somebody was exiled, decrement
             if (player.getRole().equals("Mafia")) {
                 mafiaCount--;
             } else {
@@ -161,14 +167,15 @@ public class VoteScreen extends Activity implements OnClickListener {
                 docIsDead = true;
             }
 
+            // Check to see if the conditions for a victory have been met, otherwise display the role of the exiled player
             checkVictory();
-            alertDialog.setTitle("Player Exiled");
-            alertDialog.setMessage(player.getName() + " was " + player.getRole() + "!");
+            votingResultPopup.setTitle("Player Exiled");
+            votingResultPopup.setMessage(player.getName() + " was " + player.getRole() + "!");
             phaseIndex = 0;
         }
 
         // Show the built dialog
-        alertDialog.show();
+        votingResultPopup.show();
     }
 
     @Override
@@ -182,19 +189,22 @@ public class VoteScreen extends Activity implements OnClickListener {
     public void onClick(View arg0) {
         if (!gameOver) {
             if (phaseIndex == 0) {
-                if (!detectiveIsDead) {//if detective is not dead display detective screen
+                // If the detective isn't dead, let him vote
+                if (!detectiveIsDead) {
                     doVote("Detective");
                 }
                 phaseIndex++;
             } else if (phaseIndex == 1) {
+                // Let the mafia vote
                 doVote("Mafia");
                 phaseIndex++;
             } else if (phaseIndex == 2) {
-
-                if (!docIsDead) {//if doctor is not dead display doctor screen
+                // If the doctor isn't dead, let him vote
+                if (!docIsDead) {
                     doVote("Doctor");
                 }
                 phaseIndex++;
+                // Display what happened during the night and let the innocents vote
             } else if (phaseIndex == 3) {
                 showResults();
                 curDay++;
@@ -206,6 +216,7 @@ public class VoteScreen extends Activity implements OnClickListener {
                 phaseIndex = 0;
             }
         } else {
+            // TODO: Add unique victory text
             if (innocentVictory) {
                 lblResults.setText("Daily Happenings:\n\nThe mafia have been driven out of Ponty Pandy and the innocents have won!");
             } else {
@@ -219,6 +230,7 @@ public class VoteScreen extends Activity implements OnClickListener {
             if (players[i].getHealthStatus().equals(players[i].getHealthTypes()[2])) {
                 players[i].setHealthStatus(players[i].getHealthTypes()[1]);
 
+                // If somebody died, decrement the innocent counter
                 innocentCount--;
 
                 // Detect if the killed player has a special role so that later we wont call them
@@ -231,6 +243,8 @@ public class VoteScreen extends Activity implements OnClickListener {
 
                 // TODO: Add more flavor text for a more engaging experience
                 lblResults.setText("Daily Happenings:\n\n" + players[i].getName() + " has died in a horrific accident!\n" + players[i].getName() + " was " + players[i].getRole() + "!");
+                checkVictory();
+
                 break;
             }
 
