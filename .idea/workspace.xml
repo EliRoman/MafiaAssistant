@@ -78,17 +78,18 @@
       <file leaf-file-name="VoteScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9396709" vertical-offset="2656" max-vertical-offset="4607">
-              <caret line="126" column="55" selection-start-line="126" selection-start-column="55" selection-end-line="126" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.20809248" vertical-offset="4805" max-vertical-offset="5355">
+              <caret line="289" column="79" selection-start-line="289" selection-start-column="79" selection-end-line="289" selection-end-column="79" />
               <folding>
-                <element signature="e#0#10451#0" expanded="true" />
+                <element signature="e#0#11927#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#2345#2353#0" expanded="true" />
-                <element signature="e#3534#4723#0" expanded="true" />
-                <element signature="e#3728#3736#0" expanded="true" />
-                <element signature="e#4712#4713#0" expanded="true" />
-                <element signature="e#5115#5277#0" expanded="true" />
-                <element signature="e#5266#5267#0" expanded="true" />
+                <element signature="e#2560#2568#0" expanded="true" />
+                <element signature="e#3749#4938#0" expanded="true" />
+                <element signature="e#3943#3951#0" expanded="true" />
+                <element signature="e#4927#4928#0" expanded="true" />
+                <element signature="e#5330#5492#0" expanded="true" />
+                <element signature="e#5481#5482#0" expanded="true" />
+                <element signature="e#11559#11567#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1105,6 +1106,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/Player.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/MainActivity.java" />
+        <option value="D:/AndroidStudioProjects/MafiaAssistant/app/src/main/res/raw/deathflavor1.txt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java" />
       </list>
     </option>
@@ -1197,6 +1199,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MafiaAssistant" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="raw" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1425,11 +1445,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1440,7 +1461,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23129252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2840136" sideWeight="0.4871407" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2840136" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17246597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2840136" sideWeight="0.5128593" order="7" side_tool="true" content_ui="tabs" />
@@ -1452,7 +1473,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39965987" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1499,14 +1519,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3111" max-vertical-offset="4318">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
           <folding>
-            <element signature="e#0#10451#0" expanded="true" />
+            <element signature="e#0#11927#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2345#2353#0" expanded="true" />
-            <element signature="e#3534#4723#0" expanded="true" />
-            <element signature="e#3728#3736#0" expanded="true" />
-            <element signature="e#4712#4713#0" expanded="true" />
-            <element signature="e#5115#5277#0" expanded="true" />
-            <element signature="e#5266#5267#0" expanded="true" />
+            <element signature="e#2560#2568#0" expanded="true" />
+            <element signature="e#3749#4938#0" expanded="true" />
+            <element signature="e#3943#3951#0" expanded="true" />
+            <element signature="e#4927#4928#0" expanded="true" />
+            <element signature="e#5330#5492#0" expanded="true" />
+            <element signature="e#5481#5482#0" expanded="true" />
+            <element signature="e#11559#11567#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1540,14 +1561,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3179" max-vertical-offset="4386">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
           <folding>
-            <element signature="e#0#10451#0" expanded="true" />
+            <element signature="e#0#11927#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2345#2353#0" expanded="true" />
-            <element signature="e#3534#4723#0" expanded="true" />
-            <element signature="e#3728#3736#0" expanded="true" />
-            <element signature="e#4712#4713#0" expanded="true" />
-            <element signature="e#5115#5277#0" expanded="true" />
-            <element signature="e#5266#5267#0" expanded="true" />
+            <element signature="e#2560#2568#0" expanded="true" />
+            <element signature="e#3749#4938#0" expanded="true" />
+            <element signature="e#3943#3951#0" expanded="true" />
+            <element signature="e#4927#4928#0" expanded="true" />
+            <element signature="e#5330#5492#0" expanded="true" />
+            <element signature="e#5481#5482#0" expanded="true" />
+            <element signature="e#11559#11567#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1693,19 +1715,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/AndroidStudioProjects/MafiaAssistant/app/src/main/res/raw/deathflavor.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9396709" vertical-offset="2656" max-vertical-offset="4607">
-          <caret line="126" column="55" selection-start-line="126" selection-start-column="55" selection-end-line="126" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.20809248" vertical-offset="4805" max-vertical-offset="5355">
+          <caret line="289" column="79" selection-start-line="289" selection-start-column="79" selection-end-line="289" selection-end-column="79" />
           <folding>
-            <element signature="e#0#10451#0" expanded="true" />
+            <element signature="e#0#11927#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2345#2353#0" expanded="true" />
-            <element signature="e#3534#4723#0" expanded="true" />
-            <element signature="e#3728#3736#0" expanded="true" />
-            <element signature="e#4712#4713#0" expanded="true" />
-            <element signature="e#5115#5277#0" expanded="true" />
-            <element signature="e#5266#5267#0" expanded="true" />
+            <element signature="e#2560#2568#0" expanded="true" />
+            <element signature="e#3749#4938#0" expanded="true" />
+            <element signature="e#3943#3951#0" expanded="true" />
+            <element signature="e#4927#4928#0" expanded="true" />
+            <element signature="e#5330#5492#0" expanded="true" />
+            <element signature="e#5481#5482#0" expanded="true" />
+            <element signature="e#11559#11567#0" expanded="true" />
           </folding>
         </state>
       </provider>
