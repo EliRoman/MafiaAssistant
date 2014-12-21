@@ -71,15 +71,13 @@ public class VoteScreen extends Activity implements OnClickListener {
         ArrayList<String> dialogItems = new ArrayList<String>();
 
         // Build the menu appropriately
-        for (int i = 0; i < players.length; i++) {
+        for (Player player : players) {
 
             // If the current player is not dead, then add them to the voting list
-            if (!players[i].getHealthStatus().equals("Dead")) {
-                if (!players[i].getRole().equals(voter) || players[i].getRole().equals("Doctor") || players[i].getRole().equals("Innocent")) {
-                    dialogItems.add(players[i].getName());
+            if (!player.getHealthStatus().equals("Dead")) {
+                if (!player.getRole().equals(voter) || player.getRole().equals("Doctor") || player.getRole().equals("Innocent")) {
+                    dialogItems.add(player.getName());
                 }
-            } else {
-                continue;
             }
         }
 
@@ -102,15 +100,13 @@ public class VoteScreen extends Activity implements OnClickListener {
             public void onClick(DialogInterface dialog, int selection) {
                 ArrayList<String> dialogIDs = new ArrayList<String>();
 
-                for (int i = 0; i < players.length; i++) {
+                for (Player player : players) {
 
                     // If the current player is not dead, then add them to the voting list
-                    if (!players[i].getHealthStatus().equals("Dead")) {
-                        if (!players[i].getRole().equals(voter) || players[i].getRole().equals("Doctor") || players[i].getRole().equals("Innocent")) {
-                            dialogIDs.add(players[i].getPlayerID());
+                    if (!player.getHealthStatus().equals("Dead")) {
+                        if (!player.getRole().equals(voter) || player.getRole().equals("Doctor") || player.getRole().equals("Innocent")) {
+                            dialogIDs.add(player.getPlayerID());
                         }
-                    } else {
-                        continue;
                     }
 
                 }
@@ -118,9 +114,9 @@ public class VoteScreen extends Activity implements OnClickListener {
                 // Take the selection of the player and find their unique ID
                 choiceID = dialogIDs.get(selection);
 
-                for (int i = 0; i < players.length; i++) {
-                    if (players[i].getPlayerID().equals(choiceID)) {
-                        handleVote(voter, players[i]);
+                for (Player player : players) {
+                    if (player.getPlayerID().equals(choiceID)) {
+                        handleVote(voter, player);
                         break;
                     }
                 }
@@ -240,23 +236,23 @@ public class VoteScreen extends Activity implements OnClickListener {
     }
 
     public void showResults() {
-        for (int i = 0; i < players.length; i++) {
-            if (players[i].getHealthStatus().equals(players[i].getHealthTypes()[2])) {
-                players[i].setHealthStatus(players[i].getHealthTypes()[1]);
+        for (Player player : players) {
+            if (player.getHealthStatus().equals(player.getHealthTypes()[2])) {
+                player.setHealthStatus(player.getHealthTypes()[1]);
 
                 // If somebody died, decrement the innocent counter
                 innocentCount--;
 
                 // Detect if the killed player has a special role so that later we wont call them
-                if (players[i].getRole().equals("Detective")) {
+                if (player.getRole().equals("Detective")) {
                     detectiveIsDead = true;
                 }
-                if (players[i].getRole().equals("Doctor")) {
+                if (player.getRole().equals("Doctor")) {
                     docIsDead = true;
                 }
 
                 // TODO: Add more flavor text for a more engaging experience
-                lblResults.setText("Daily Happenings:\n\n" + players[i].getName() + " has died in a horrific accident!\n" + players[i].getName() + " was " + players[i].getRole() + "!");
+                lblResults.setText("Daily Happenings:\n\n" + player.getName() + " has died in a horrific accident!\n" + player.getName() + " was " + player.getRole() + "!");
                 checkVictory();
 
                 break;
@@ -287,22 +283,28 @@ public class VoteScreen extends Activity implements OnClickListener {
     // Load all text resources
     // TODO: Merge all text files into a single resource
     public void loadTextResources() {
-        InputStream deathRes = getResources().openRawResource(R.raw.deathflavor);
+
 //        InputStream calmRes = getResources().openRawResource(R.raw.death_flavor);
 //        InputStream victoryRes = getResources().openRawResource(R.raw.death_flavor);
 
 
-        // Read the text from resources into deathFlavors
-        BufferedReader reader = new BufferedReader(new InputStreamReader(deathRes));
+        // TODO: Change absolute path into relative path
         String line;
         ArrayList<String> rawInput = new ArrayList<String>();
         try {
+            // Read the text from resources into deathFlavors
+            InputStream deathRes = getResources().getAssets().open("D:/AndroidStudioProjects/MafiaAssistant/app/src/main/res/raw/deathflavor.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(deathRes));
             line = reader.readLine();
             while (line != null) {
                 rawInput.add(line);
             }
 
             deathFlavors = rawInput.toArray(new String[rawInput.size()]);
+
+            for (String flavor : deathFlavors) {
+                System.out.println(flavor);
+            }
         } catch (IOException e) {
             // TODO: Add some way to handle file loading exception or ignore them completely
         }
