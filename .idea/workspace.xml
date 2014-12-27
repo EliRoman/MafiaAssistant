@@ -30,6 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f589ac0-3c40-4aea-a506-31e592a74bdd" name="Default" comment="Fixed gradle sync issues">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mafia Assistant.iws" />
@@ -71,15 +72,13 @@
       <file leaf-file-name="VoteScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6892139" vertical-offset="4791" max-vertical-offset="5338">
-              <caret line="307" column="33" selection-start-line="307" selection-start-column="33" selection-end-line="307" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.8153565" vertical-offset="4722" max-vertical-offset="5304">
+              <caret line="309" column="11" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="11" />
               <folding>
-                <element signature="e#0#11929#0" expanded="true" />
+                <element signature="e#0#11963#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="e#2560#2568#0" expanded="true" />
                 <element signature="e#3865#3873#0" expanded="true" />
-                <element signature="e#5139#5301#0" expanded="true" />
-                <element signature="e#5290#5291#0" expanded="true" />
                 <element signature="e#11154#11162#0" expanded="true" />
               </folding>
             </state>
@@ -1153,24 +1152,24 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MafiaAssistant" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="MafiaAssistant" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MafiaAssistant" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1405,12 +1404,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1433,6 +1431,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39965987" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1473,15 +1472,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4866" max-vertical-offset="5372">
-          <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4791" max-vertical-offset="5338">
+          <caret line="307" column="33" selection-start-line="307" selection-start-column="33" selection-end-line="307" selection-end-column="33" />
           <folding>
-            <element signature="e#0#11929#0" expanded="true" />
+            <element signature="e#0#11963#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#2560#2568#0" expanded="true" />
             <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#5139#5301#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
+            <element signature="e#11154#11162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1275">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3196">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4866" max-vertical-offset="5372">
+          <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11963#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2560#2568#0" expanded="true" />
+            <element signature="e#3865#3873#0" expanded="true" />
             <element signature="e#11154#11162#0" expanded="true" />
           </folding>
         </state>
@@ -1508,12 +1535,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4805" max-vertical-offset="5355">
           <caret line="289" column="79" selection-start-line="289" selection-start-column="79" selection-end-line="289" selection-end-column="79" />
           <folding>
-            <element signature="e#0#11929#0" expanded="true" />
+            <element signature="e#0#11963#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#2560#2568#0" expanded="true" />
             <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#5139#5301#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
             <element signature="e#11154#11162#0" expanded="true" />
           </folding>
         </state>
@@ -1540,12 +1565,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3111" max-vertical-offset="4318">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
           <folding>
-            <element signature="e#0#11929#0" expanded="true" />
+            <element signature="e#0#11963#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#2560#2568#0" expanded="true" />
             <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#5139#5301#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
             <element signature="e#11154#11162#0" expanded="true" />
           </folding>
         </state>
@@ -1572,12 +1595,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3179" max-vertical-offset="4386">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
           <folding>
-            <element signature="e#0#11929#0" expanded="true" />
+            <element signature="e#0#11963#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#2560#2568#0" expanded="true" />
             <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#5139#5301#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
             <element signature="e#11154#11162#0" expanded="true" />
           </folding>
         </state>
@@ -1592,13 +1613,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
@@ -1623,13 +1644,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1122">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
@@ -1640,13 +1661,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1122">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
@@ -1664,23 +1685,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1717">
           <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
@@ -1691,13 +1712,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/Player.java">
@@ -1725,15 +1746,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6892139" vertical-offset="4791" max-vertical-offset="5338">
-          <caret line="307" column="33" selection-start-line="307" selection-start-column="33" selection-end-line="307" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.8153565" vertical-offset="4722" max-vertical-offset="5304">
+          <caret line="309" column="11" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="11" />
           <folding>
-            <element signature="e#0#11929#0" expanded="true" />
+            <element signature="e#0#11963#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#2560#2568#0" expanded="true" />
             <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#5139#5301#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
             <element signature="e#11154#11162#0" expanded="true" />
           </folding>
         </state>

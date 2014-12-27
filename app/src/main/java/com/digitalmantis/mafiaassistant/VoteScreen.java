@@ -291,22 +291,22 @@ public class VoteScreen extends Activity implements OnClickListener {
         // TODO: Change absolute path into relative path
         String line;
         ArrayList<String> rawInput = new ArrayList<String>();
-        try {
-            // Read the text from resources into deathFlavors
-            InputStream deathRes = getResources().getAssets().open("D:/AndroidStudioProjects/MafiaAssistant/app/src/main/res/raw/deathflavor.txt");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(deathRes));
-            line = reader.readLine();
-            while (line != null) {
-                rawInput.add(line);
-            }
-
-            deathFlavors = rawInput.toArray(new String[rawInput.size()]);
-
-            for (String flavor : deathFlavors) {
-                System.out.println(flavor);
-            }
-        } catch (IOException e) {
-            // TODO: Add some way to handle file loading exception or ignore them completely
-        }
+//        try {
+//            // Read the text from resources into deathFlavors
+//            InputStream deathRes = getResources().getAssets().open("D:/AndroidStudioProjects/MafiaAssistant/app/src/main/res/raw/deathflavor.txt");
+//            BufferedReader reader = new BufferedReader(new InputStreamReader(deathRes));
+//            line = reader.readLine();
+//            while (line != null) {
+//                rawInput.add(line);
+//            }
+//
+//            deathFlavors = rawInput.toArray(new String[rawInput.size()]);
+//
+//            for (String flavor : deathFlavors) {
+//                System.out.println(flavor);
+//            }
+//        } catch (IOException e) {
+//            // TODO: Add some way to handle file loading exception or ignore them completely
+//        }
     }
 }
