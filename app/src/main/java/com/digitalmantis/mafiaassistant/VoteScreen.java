@@ -26,6 +26,7 @@ public class VoteScreen extends Activity implements OnClickListener {
     private Button btnNextPhase;
     private boolean gameOver = false, innocentVictory = false, docIsDead = false, detectiveIsDead = false;
     private String choiceID;
+    // private String[] deathFlavors, calmFlavors, victoryFlavors;
     private int curDay = 0, phaseIndex = 0, innocentCount = 0, mafiaCount = 0;
 
     @Override
@@ -37,6 +38,8 @@ public class VoteScreen extends Activity implements OnClickListener {
         lblResults = (TextView) findViewById(R.id.lblResults);
         btnNextPhase = (Button) findViewById(R.id.btnNextPhase);
         btnNextPhase.setOnClickListener(this);
+
+        loadTextResources();
 
         // Get the string array and instantiate the players array
         String[] temp = getIntent().getStringArrayExtra("players.array.key");
@@ -64,15 +67,13 @@ public class VoteScreen extends Activity implements OnClickListener {
         ArrayList<String> dialogItems = new ArrayList<String>();
 
         // Build the menu appropriately
-        for (int i = 0; i < players.length; i++) {
+        for (Player player : players) {
 
             // If the current player is not dead, then add them to the voting list
-            if (!players[i].getHealthStatus().equals("Dead")) {
-                if (!players[i].getRole().equals(voter) || players[i].getRole().equals("Doctor") || players[i].getRole().equals("Innocent")) {
-                    dialogItems.add(players[i].getName());
+            if (!player.getHealthStatus().equals("Dead")) {
+                if (!player.getRole().equals(voter) || player.getRole().equals("Doctor") || player.getRole().equals("Innocent")) {
+                    dialogItems.add(player.getName());
                 }
-            } else {
-                continue;
             }
         }
 
@@ -95,15 +96,13 @@ public class VoteScreen extends Activity implements OnClickListener {
             public void onClick(DialogInterface dialog, int selection) {
                 ArrayList<String> dialogIDs = new ArrayList<String>();
 
-                for (int i = 0; i < players.length; i++) {
+                for (Player player : players) {
 
                     // If the current player is not dead, then add them to the voting list
-                    if (!players[i].getHealthStatus().equals("Dead")) {
-                        if (!players[i].getRole().equals(voter) || players[i].getRole().equals("Doctor") || players[i].getRole().equals("Innocent")) {
-                            dialogIDs.add(players[i].getPlayerID());
+                    if (!player.getHealthStatus().equals("Dead")) {
+                        if (!player.getRole().equals(voter) || player.getRole().equals("Doctor") || player.getRole().equals("Innocent")) {
+                            dialogIDs.add(player.getPlayerID());
                         }
-                    } else {
-                        continue;
                     }
 
                 }
@@ -111,9 +110,9 @@ public class VoteScreen extends Activity implements OnClickListener {
                 // Take the selection of the player and find their unique ID
                 choiceID = dialogIDs.get(selection);
 
-                for (int i = 0; i < players.length; i++) {
-                    if (players[i].getPlayerID().equals(choiceID)) {
-                        handleVote(voter, players[i]);
+                for (Player player : players) {
+                    if (player.getPlayerID().equals(choiceID)) {
+                        handleVote(voter, player);
                         break;
                     }
                 }
@@ -135,7 +134,7 @@ public class VoteScreen extends Activity implements OnClickListener {
             }
         });
 
-        // TODO: Find alternative to setButton() if needed
+        // TODO: Find alternative to setButton() if needed, maybe find a way to clean this up more?
         if (voter.equals("Detective")) {
             // Display the investigated player's role
             votingResultPopup.setTitle("Player Investigated");
@@ -164,7 +163,7 @@ public class VoteScreen extends Activity implements OnClickListener {
             //detect if the exiled player has a special role so that later we wont call them
             if (player.getRole().equals("Detective")) {
                 detectiveIsDead = true;
-            }else if (player.getRole().equals("Doctor")) {
+            } else if (player.getRole().equals("Doctor")) {
                 docIsDead = true;
             }
 
@@ -189,27 +188,35 @@ public class VoteScreen extends Activity implements OnClickListener {
     @Override
     public void onClick(View arg0) {
         if (!gameOver) {
-            if (phaseIndex == 0) {
-                // If the detective isn't dead, let him vote
-                if (!detectiveIsDead) {
-                    doVote("Detective");
-                }
-            } else if (phaseIndex == 1) {
-                // Let the mafia vote
-                doVote("Mafia");
-            } else if (phaseIndex == 2) {
-                // If the doctor isn't dead, let him vote
-                if (!docIsDead) {
-                    doVote("Doctor");
-                }
-                // Display what happened during the night and let the innocents vote
-            } else if (phaseIndex == 3) {
-                showResults();
-                curDay++;
-                lblCurDay.setText("Day: " + (curDay + 1));
-            } else if (phaseIndex == 4) {
-                doVote("Innocent");
-                phaseIndex = -1;
+
+            switch (phaseIndex) {
+                case 0:
+                    lblCurDay.setText("Night: " + curDay);
+                    // If the detective isn't dead, let him vote
+                    if (!detectiveIsDead) {
+                        doVote("Detective");
+                    }
+                    break;
+                case 1:
+                    // Let the mafia vote
+                    doVote("Mafia");
+                    break;
+                case 2:
+                    // If the doctor isn't dead, let him vote
+                    if (!docIsDead) {
+                        doVote("Doctor");
+                    }
+                    break;
+                case 3:
+                    // Show the results and continue to the night
+                    showResults();
+                    curDay++;
+                    lblCurDay.setText("Day: " + (curDay + 1));
+                    break;
+                case 4:
+                    doVote("Innocent");
+                    phaseIndex = -1;
+                    break;
             }
 
             // Increment to the next part of the night/day
@@ -225,23 +232,23 @@ public class VoteScreen extends Activity implements OnClickListener {
     }
 
     public void showResults() {
-        for (int i = 0; i < players.length; i++) {
-            if (players[i].getHealthStatus().equals(players[i].getHealthTypes()[2])) {
-                players[i].setHealthStatus(players[i].getHealthTypes()[1]);
+        for (Player player : players) {
+            if (player.getHealthStatus().equals(player.getHealthTypes()[2])) {
+                player.setHealthStatus(player.getHealthTypes()[1]);
 
                 // If somebody died, decrement the innocent counter
                 innocentCount--;
 
                 // Detect if the killed player has a special role so that later we wont call them
-                if (players[i].getRole().equals("Detective")) {
+                if (player.getRole().equals("Detective")) {
                     detectiveIsDead = true;
                 }
-                if (players[i].getRole().equals("Doctor")) {
+                if (player.getRole().equals("Doctor")) {
                     docIsDead = true;
                 }
 
                 // TODO: Add more flavor text for a more engaging experience
-                lblResults.setText("Daily Happenings:\n\n" + players[i].getName() + " has died in a horrific accident!\n" + players[i].getName() + " was " + players[i].getRole() + "!");
+                lblResults.setText("Daily Happenings:\n\n" + player.getName() + " has died in a horrific accident!\n" + player.getName() + " was " + player.getRole() + "!");
                 checkVictory();
 
                 break;
@@ -262,5 +269,16 @@ public class VoteScreen extends Activity implements OnClickListener {
             gameOver = true;
             innocentVictory = true;
         }
+    }
+
+    public String generateDeathFlavor() {
+
+        return "";
+    }
+
+    // Load all text resources
+    // TODO: Merge all text files into a single resource
+    public void loadTextResources() {
+        // TODO: Implement
     }
 }
