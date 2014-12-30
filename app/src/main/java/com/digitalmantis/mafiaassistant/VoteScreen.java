@@ -17,10 +17,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class VoteScreen extends Activity implements OnClickListener {
@@ -30,7 +26,7 @@ public class VoteScreen extends Activity implements OnClickListener {
     private Button btnNextPhase;
     private boolean gameOver = false, innocentVictory = false, docIsDead = false, detectiveIsDead = false;
     private String choiceID;
-    private String[] deathFlavors, calmFlavors, victoryFlavors;
+    // private String[] deathFlavors, calmFlavors, victoryFlavors;
     private int curDay = 0, phaseIndex = 0, innocentCount = 0, mafiaCount = 0;
 
     @Override
@@ -283,30 +279,6 @@ public class VoteScreen extends Activity implements OnClickListener {
     // Load all text resources
     // TODO: Merge all text files into a single resource
     public void loadTextResources() {
-
-//        InputStream calmRes = getResources().openRawResource(R.raw.death_flavor);
-//        InputStream victoryRes = getResources().openRawResource(R.raw.death_flavor);
-
-
-        // TODO: Change absolute path into relative path
-        String line;
-        ArrayList<String> rawInput = new ArrayList<String>();
-//        try {
-//            // Read the text from resources into deathFlavors
-//            InputStream deathRes = getResources().getAssets().open("D:/AndroidStudioProjects/MafiaAssistant/app/src/main/res/raw/deathflavor.txt");
-//            BufferedReader reader = new BufferedReader(new InputStreamReader(deathRes));
-//            line = reader.readLine();
-//            while (line != null) {
-//                rawInput.add(line);
-//            }
-//
-//            deathFlavors = rawInput.toArray(new String[rawInput.size()]);
-//
-//            for (String flavor : deathFlavors) {
-//                System.out.println(flavor);
-//            }
-//        } catch (IOException e) {
-//            // TODO: Add some way to handle file loading exception or ignore them completely
-//        }
+        // TODO: Implement
     }
 }

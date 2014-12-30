@@ -31,7 +31,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f589ac0-3c40-4aea-a506-31e592a74bdd" name="Default" comment="Fixed gradle sync issues">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mafia Assistant.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,14 +71,13 @@
       <file leaf-file-name="VoteScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8153565" vertical-offset="4722" max-vertical-offset="5304">
-              <caret line="309" column="11" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.8702011" vertical-offset="0" max-vertical-offset="4828">
+              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
               <folding>
-                <element signature="e#0#11963#0" expanded="true" />
+                <element signature="e#0#10768#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#2560#2568#0" expanded="true" />
-                <element signature="e#3865#3873#0" expanded="true" />
-                <element signature="e#11154#11162#0" expanded="true" />
+                <element signature="e#2442#2450#0" expanded="true" />
+                <element signature="e#3747#3755#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1475,11 +1473,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4791" max-vertical-offset="5338">
           <caret line="307" column="33" selection-start-line="307" selection-start-column="33" selection-end-line="307" selection-end-column="33" />
           <folding>
-            <element signature="e#0#11963#0" expanded="true" />
+            <element signature="e#0#10768#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2560#2568#0" expanded="true" />
-            <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#11154#11162#0" expanded="true" />
+            <element signature="e#2442#2450#0" expanded="true" />
+            <element signature="e#3747#3755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1505,11 +1502,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4866" max-vertical-offset="5372">
           <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
           <folding>
-            <element signature="e#0#11963#0" expanded="true" />
+            <element signature="e#0#10768#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2560#2568#0" expanded="true" />
-            <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#11154#11162#0" expanded="true" />
+            <element signature="e#2442#2450#0" expanded="true" />
+            <element signature="e#3747#3755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1535,11 +1531,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4805" max-vertical-offset="5355">
           <caret line="289" column="79" selection-start-line="289" selection-start-column="79" selection-end-line="289" selection-end-column="79" />
           <folding>
-            <element signature="e#0#11963#0" expanded="true" />
+            <element signature="e#0#10768#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2560#2568#0" expanded="true" />
-            <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#11154#11162#0" expanded="true" />
+            <element signature="e#2442#2450#0" expanded="true" />
+            <element signature="e#3747#3755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1565,11 +1560,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3111" max-vertical-offset="4318">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
           <folding>
-            <element signature="e#0#11963#0" expanded="true" />
+            <element signature="e#0#10768#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2560#2568#0" expanded="true" />
-            <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#11154#11162#0" expanded="true" />
+            <element signature="e#2442#2450#0" expanded="true" />
+            <element signature="e#3747#3755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1595,11 +1589,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3179" max-vertical-offset="4386">
           <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
           <folding>
-            <element signature="e#0#11963#0" expanded="true" />
+            <element signature="e#0#10768#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2560#2568#0" expanded="true" />
-            <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#11154#11162#0" expanded="true" />
+            <element signature="e#2442#2450#0" expanded="true" />
+            <element signature="e#3747#3755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1746,14 +1739,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/digitalmantis/mafiaassistant/VoteScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8153565" vertical-offset="4722" max-vertical-offset="5304">
-          <caret line="309" column="11" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.8702011" vertical-offset="0" max-vertical-offset="4828">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
           <folding>
-            <element signature="e#0#11963#0" expanded="true" />
+            <element signature="e#0#10768#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2560#2568#0" expanded="true" />
-            <element signature="e#3865#3873#0" expanded="true" />
-            <element signature="e#11154#11162#0" expanded="true" />
+            <element signature="e#2442#2450#0" expanded="true" />
+            <element signature="e#3747#3755#0" expanded="true" />
           </folding>
         </state>
       </provider>
